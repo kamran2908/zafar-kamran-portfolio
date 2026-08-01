@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zafar Kamran V — Software Developer | CS @ VIT</title>
+    <meta name="description" content="Zafar Kamran V — CS student at VIT with 9.55 CGPA, full-stack developer and ML practitioner.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#" class="nav__logo">ZK<span>.</span></a>
+            <ul class="nav__links" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav__right">
+                <a href="resume.pdf" download class="btn btn--outline btn--sm"><i class="fa-solid fa-download"></i> Resume</a>
+                <a href="#contact" class="btn btn--primary btn--sm">Contact Me</a>
+                <button class="nav__burger" id="navBurger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero" id="hero">
+        <div class="container">
+            <div class="hero__grid">
+                <div class="hero__content">
+                    <div class="hero__badge">
+                        <span class="dot dot--green"></span>
+                        Open to SDE Internship Opportunities
+                    </div>
+                    <h1 class="hero__title">
+                        Zafar Kamran <span class="accent">V</span>
+                    </h1>
+                    <p class="hero__tagline">Computer Science &bull; VIT Vellore &bull; 9.55 CGPA</p>
+                    <p class="hero__desc">
+                        I build reliable software — from constraint-solving scheduling engines and full-stack web platforms to supervised ML pipelines. Looking for SDE internship opportunities where I can contribute to scalable backend systems and real-time data infrastructure.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn btn--primary">View My Work</a>
+                        <a href="resume.pdf" download class="btn btn--outline"><i class="fa-solid fa-download"></i> Download Resume</a>
+                        <a href="https://github.com/vzafarkamran" target="_blank" class="btn btn--icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/vzafarkamran" target="_blank" class="btn btn--icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="hero__card">
+                    <div class="code-window">
+                        <div class="code-window__bar">
+                            <span class="dot dot--red"></span>
+                            <span class="dot dot--yellow"></span>
+                            <span class="dot dot--green"></span>
+                            <span class="code-window__title">about_me.py</span>
+                        </div>
+                        <pre class="code-window__body"><code><span class="kw">class</span> <span class="cls">Candidate</span>:
+    name     = <span class="str">"Zafar Kamran V"</span>
+    role     = <span class="str">"Software Developer"</span>
+    college  = <span class="str">"VIT Vellore"</span>
+    cgpa     = <span class="num">9.55</span>
+    stack    = [<span class="str">"React"</span>, <span class="str">"Node"</span>, <span class="str">"Python"</span>,
+               <span class="str">"Java"</span>, <span class="str">"Scikit-learn"</span>]
+
+    <span class="kw">def</span> <span class="fn">status</span>(self):
+        <span class="kw">return</span> <span class="str">"Ready to build 🚀"</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== STATS STRIP ===== -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stats__item">
+                    <span class="stats__number">9.55</span>
+                    <span class="stats__label">CGPA at VIT</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__number">97.6%</span>
+                    <span class="stats__label">12th Board</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__number">3</span>
+                    <span class="stats__label">Key Projects</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__number">2</span>
+                    <span class="stats__label">Certifications</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section__title">About <span class="accent">Me</span></h2>
+            <p class="about__bio">
+                I'm a Computer Science undergraduate at VIT Vellore (9.55 CGPA) with a passion for building reliable, scalable software. Whether it's solving complex algorithmic constraints, architecting REST microservices, or evaluating machine learning models, I love turning non-trivial challenges into clean, practical systems. I'm actively seeking SDE internship roles where I can build impactful backend tools and real-time infrastructure.
+            </p>
+
+            <div class="cards cards--four">
+                <div class="card">
+                    <div class="card__icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3>Algorithm Design</h3>
+                    <p>Built a 16-slot constraint-aware timetable solver and a real-time study-space matchmaker in RoomGrid — experience in designing efficient, real-world scheduling logic.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Backend & APIs</h3>
+                    <p>Designed RESTful microservices with Node.js, Express, MongoDB, and Supabase, including JWT auth and bulk data ingestion for production-grade web platforms.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>ML & Data</h3>
+                    <p>Developed a clinical prediction model with Scikit-learn evaluating Random Forest vs Logistic Regression — hands-on experience with end-to-end ML workflows.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Strong Foundations</h3>
+                    <p>9.55 CGPA mastering DSA, OOP, and systems thinking in Java, C++, and Python. OCI GenAI Certified cloud engineer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section section--alt" id="projects">
+        <div class="container">
+            <h2 class="section__title">Featured Projects</h2>
+            <p class="section__subtitle">Real systems I've designed, built, and shipped.</p>
+
+            <div class="projects">
+
+                <!-- Project 1 -->
+                <article class="project">
+                    <div class="project__info">
+                        <span class="project__label">Scheduling & Algorithms</span>
+                        <h3 class="project__title">RoomGrid</h3>
+                        <p class="project__desc">
+                            A constraint-aware scheduling engine for university timetables. Resolves timing conflicts across 16 slots, manages theory/lab distribution rules, and features a live "Matchmaker" that cross-references student schedules against building occupancy to find open study spaces.
+                        </p>
+                        <ul class="project__highlights">
+                            <li>Constraint solver handling complex multi-variable scheduling</li>
+                            <li>Real-time matchmaker algorithm for live occupancy matching</li>
+                            <li>Bulk Excel import (<code>xlsx</code>) synced to Supabase PostgreSQL</li>
+                        </ul>
+                        <div class="tags">
+                            <span>React</span><span>Supabase</span><span>Tailwind</span><span>Zustand</span>
+                        </div>
+                        <a href="https://github.com/vzafarkamran/RoomGrid" target="_blank" class="btn btn--outline btn--sm"><i class="fa-brands fa-github"></i> Source Code</a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project">
+                    <div class="project__info">
+                        <span class="project__label">Machine Learning</span>
+                        <h3 class="project__title">Heart Disease Prediction</h3>
+                        <p class="project__desc">
+                            A supervised ML classification pipeline that predicts heart disease risk from clinical biomarkers. Features thorough EDA, feature scaling, model benchmarking (Random Forest vs Logistic Regression), and a Streamlit dashboard for real-time risk inference.
+                        </p>
+                        <ul class="project__highlights">
+                            <li>Optimized for minimizing false negatives in diagnostic safety</li>
+                            <li>Full data cleaning, outlier treatment, and feature engineering</li>
+                            <li>Interactive Streamlit web dashboard for live predictions</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Streamlit</span>
+                        </div>
+                        <a href="https://github.com/vzafarkamran/Heart-Disease-Prediction" target="_blank" class="btn btn--outline btn--sm"><i class="fa-brands fa-github"></i> Source Code</a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project">
+                    <div class="project__info">
+                        <span class="project__label">Full-Stack Web App</span>
+                        <h3 class="project__title">Food Delivery Platform</h3>
+                        <p class="project__desc">
+                            An end-to-end MERN stack application where users can browse menus, manage carts, and place orders. Features secure JWT authentication, encrypted passwords, RESTful APIs for order processing, and an admin dashboard for inventory and analytics.
+                        </p>
+                        <ul class="project__highlights">
+                            <li>RESTful API architecture with Express.js middleware</li>
+                            <li>JWT auth with bcrypt password hashing</li>
+                            <li>Admin dashboard for inventory and order tracking</li>
+                        </ul>
+                        <div class="tags">
+                            <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span>
+                        </div>
+                        <a href="https://github.com/vzafarkamran/food-delivery-app" target="_blank" class="btn btn--outline btn--sm"><i class="fa-brands fa-github"></i> Source Code</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section__title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4><i class="fa-solid fa-code"></i> Languages</h4>
+                    <div class="skill-group__tags">
+                        <span>Java</span><span>Python</span><span>C / C++</span><span>JavaScript</span><span>HTML / CSS</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4><i class="fa-solid fa-cubes"></i> Frameworks & Libraries</h4>
+                    <div class="skill-group__tags">
+                        <span>React.js</span><span>Node.js</span><span>Express.js</span><span>Tailwind CSS</span><span>Zustand</span><span>Scikit-learn</span><span>Pandas</span><span>Streamlit</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4><i class="fa-solid fa-database"></i> Databases & Cloud</h4>
+                    <div class="skill-group__tags">
+                        <span>Supabase (PostgreSQL)</span><span>MongoDB</span><span>MySQL</span><span>AWS</span><span>Oracle Cloud (OCI)</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4><i class="fa-solid fa-sitemap"></i> Core CS</h4>
+                    <div class="skill-group__tags">
+                        <span>Data Structures & Algorithms</span><span>Object-Oriented Programming</span><span>REST API Design</span><span>Git / Version Control</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section section--alt" id="education">
+        <div class="container">
+            <h2 class="section__title">Education & Certifications</h2>
+
+            <div class="edu-layout">
+                <div class="edu-col">
+                    <div class="edu-item edu-item--primary">
+                        <div class="edu-item__top">
+                            <h3>Vellore Institute of Technology</h3>
+                            <span class="edu-badge edu-badge--highlight">9.55 CGPA</span>
+                        </div>
+                        <p class="edu-item__sub">B.Sc. Computer Science &bull; 2024 – Present</p>
+                    </div>
+                    <div class="edu-item">
+                        <div class="edu-item__top">
+                            <h3>Narayana Junior College</h3>
+                            <span class="edu-badge">97.6%</span>
+                        </div>
+                        <p class="edu-item__sub">Class 12th &bull; 2022 – 2024</p>
+                    </div>
+                    <div class="edu-item">
+                        <div class="edu-item__top">
+                            <h3>Narayana School</h3>
+                            <span class="edu-badge">94.6%</span>
+                        </div>
+                        <p class="edu-item__sub">Class 10th &bull; 2022</p>
+                    </div>
+                </div>
+
+                <div class="edu-col">
+                    <div class="cert">
+                        <div class="cert__icon"><i class="fa-solid fa-award"></i></div>
+                        <div>
+                            <h4>OCI 2025 Generative AI Professional</h4>
+                            <p>Oracle Cloud Infrastructure &bull; July 2026</p>
+                        </div>
+                    </div>
+                    <div class="cert">
+                        <div class="cert__icon"><i class="fa-brands fa-react"></i></div>
+                        <div>
+                            <h4>React JS for Web Developers</h4>
+                            <p>Scaler &bull; April 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section__title">Let's Connect</h2>
+            <p class="section__subtitle">Feel free to reach out — I'm always open to new opportunities and conversations.</p>
+
+            <div class="contact-simple">
+                <a href="mailto:vzafarkamran@gmail.com" class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <small>Email</small>
+                        <span>vzafarkamran@gmail.com</span>
+                    </div>
+                </a>
+                <a href="tel:+919121954824" class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <small>Phone</small>
+                        <span>+91 91219 54824</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2026 Zafar Kamran V</p>
+            <div class="footer__links">
+                <a href="https://github.com/vzafarkamran" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/vzafarkamran" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:vzafarkamran@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== TOAST ===== -->
+    <div class="toast" id="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
